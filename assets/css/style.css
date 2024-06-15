@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    margin-left: 202px;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+#logo-flamez {
+    width: 175px;
+    height: 70px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+}
+
+header nav a {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0A426B;
+    margin-left: 80px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    scale: 1;
+    transition: scale 0.5s;
+}
+
+#about,
+#services {
+    letter-spacing: 1px;
+}
+
+header nav a img {
+    width: 22px;
+    height: 22px;
+}
+
+header nav a:hover {
+    scale: 1.1;
+}
+
+#whatssap {
+    background-color: #56B66B;
+    height: 42px;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    width: 158px;
+    justify-content: space-around;
+}
