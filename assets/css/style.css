@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     display: flex;
     margin-left: 202px;
@@ -58,4 +62,113 @@ header nav a:hover {
     padding: 10px 20px 10px 20px;
     width: 158px;
     justify-content: space-around;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+}
+
+.make-budget {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    font-size: 64px;
+    color: #0A426B;
+}
+
+#subtitle {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #0A426B;
+    margin-bottom: 50px;
+}
+
+#budget-button {
+    background-color: #E38C49;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#budget-button:hover {
+    transition: all ease 0.5s;
+    background-color: rgb(39, 84, 199);
+}
+
+.animation-images {
+    width: 1360px;
+    height: 600px;
+    border: 1px solid black;
+    margin-top: 60px;
+    border-radius: 50px;
+}
+
+.slider {
+    flex: 1;
+    overflow: hidden;
+    height: inherit;
+    border-radius: inherit;
+}
+
+.slider-width {
+    height: 100%;
+    display: flex;
+    transition: all ease 0.3s;
+}
+
+.slider-item {
+    width: 100%;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+}
+
+.first-text {
+    margin-top: 100px;
+}
+
+.second-text {
+    margin-top: -180px;
+}
+
+.first-text,
+.second-text {
+    max-width: 660px;
+    margin-left: 272px;
+}
+
+.first-text h2,
+.second-text h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #0A426B;
+    margin-bottom: 25px;
+}
+
+.first-text p,
+.second-text p {
+    color: #0A426B;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+#printer {
+    width: 868px;
+    height: 615px;
+    margin-left: 1143px;
 }
