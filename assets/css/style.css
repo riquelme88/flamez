@@ -78,9 +78,15 @@ main {
     flex-direction: column;
 }
 
+.opacity-0 {
+    opacity: 0;
+}
+
 #title {
     font-size: 64px;
     color: #0A426B;
+    transition: all ease 2s;
+
 }
 
 #subtitle {
@@ -88,49 +94,49 @@ main {
     margin-top: 20px;
     color: #0A426B;
     margin-bottom: 50px;
+    transition: all ease 2s;
+
 }
 
-#budget-button {
+.budget-button {
     background-color: #E38C49;
     text-decoration: none;
     color: white;
     font-size: 20px;
     padding: 20px;
     border-radius: 10px;
+    transition: all ease 2s;
 }
 
-#budget-button:hover {
+.budget-button:hover {
     transition: all ease 0.5s;
     background-color: rgb(39, 84, 199);
 }
 
-.animation-images {
+.slider {
     width: 1360px;
     height: 600px;
-    border: 1px solid black;
     margin-top: 60px;
     border-radius: 50px;
-}
-
-.slider {
-    flex: 1;
     overflow: hidden;
-    height: inherit;
-    border-radius: inherit;
 }
 
-.slider-width {
+.slides {
+    width: 300%;
     height: 100%;
     display: flex;
-    transition: all ease 0.3s;
+    transition: all ease 2s;
 }
 
-.slider-item {
-    width: 100%;
-    height: inherit;
+.slide {
+    margin-right: 2px;
+    width: 33.33%;
+    position: relative;
     background-position: center;
     background-size: cover;
+
 }
+
 
 .about-us {
     display: flex;
@@ -140,16 +146,18 @@ main {
 
 .first-text {
     margin-top: 100px;
+    transition: all ease 1s;
 }
 
 .second-text {
     margin-top: -180px;
+    transition: all ease 1s;
 }
 
 .first-text,
 .second-text {
     max-width: 660px;
-    margin-left: 272px;
+    margin-left: -272px;
 }
 
 .first-text h2,
@@ -170,5 +178,710 @@ main {
 #printer {
     width: 868px;
     height: 615px;
-    margin-left: 1143px;
+    margin-left: 1443px;
+    transition: all ease 1s;
+}
+
+.portfolios {
+    display: flex;
+    margin-left: 202px;
+    margin-right: 102px;
+    overflow: hidden;
+}
+
+.square {
+    border: 1px solid black;
+    width: 678px;
+    height: 425px;
+    border-radius: 32px;
+    margin-top: 70px;
+    padding: 40px 65px;
+    color: white;
+    background-color: #0A426B;
+    border: 0px;
+    margin-right: 20px;
+    font-family: "Inter", sans-serif;
+    transition: all ease 1.5s;
+}
+
+#square-1 {
+    margin-left: -45vw;
+}
+
+#square-2 {
+    margin-left: 115vw;
+}
+
+.square img {
+    width: 70px;
+}
+
+.square h4 {
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+.square ul {
+    margin-top: 50px;
+    list-style: none;
+}
+
+.square ul li {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+#focus {
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    font-size: 230px;
+    min-width: 150vw;
+    margin-left: -30px;
+    color: #E3E3E3;
+    margin-top: 80px;
+}
+
+.images_services_mobile {
+    display: none;
+}
+
+.services {
+    display: flex;
+    margin-top: 80px;
+}
+
+.services img {
+    width: 445px;
+    margin-left: -194px;
+    margin-right: 210px;
+}
+
+.why-us {
+    background-color: #0A426B;
+    height: 712px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+.why-us h1 {
+    font-size: 72px;
+    margin-top: 80px;
+    font-weight: 600;
+
+}
+
+.why-us .subtitle {
+    font-size: 24px;
+    max-width: 1250px;
+    text-align: center;
+    margin-top: 60px;
+
+}
+
+.stamps {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 120px;
+    width: 100vw;
+    align-items: center;
+}
+
+.stamp img {
+    width: 80px;
+}
+
+.stamp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stamp p {
+    margin-top: 20px;
+}
+
+.what-say {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.retangle {
+    width: 1377px;
+    height: 496px;
+    background-color: #0A426B;
+    margin-top: 80px;
+    border-radius: 32px;
+    display: flex;
+    padding: 20px 60px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    align-items: center;
+}
+
+
+.retangle-left h1 {
+    font-size: 52px;
+    max-width: 600px;
+    transition: all ease 1s;
+}
+
+.retangle-left p {
+    font-size: 24px;
+    font-weight: 400;
+    max-width: 480px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    transition: all ease 1s;
+}
+
+.retangle-left a {
+    text-decoration: none;
+    color: white;
+    background-color: #E38C49;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: all ease 1s;
+}
+
+.retangle-right {
+    margin-left: 300px;
+}
+
+.retangle-right img {
+    width: 195px;
+    transition: all ease 1s;
+}
+
+footer {
+    height: 133px;
+    background-color: #E3E3E3;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    color: #0A426B;
+    font-family: "Inter", sans-serif;
+}
+
+.footer-text p {
+    margin-right: 60px;
+    margin-left: -150px;
+}
+
+.footer-text a {
+    margin-right: 60px;
+    text-decoration: none;
+    color: #0A426B;
+}
+
+.social-media img {
+    margin-left: -20px;
+    margin-right: 40px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+    .slider {
+        width: 90vw
+    }
+
+    #printer {
+        margin-left: 1280px;
+        width: 650px;
+        height: 450px;
+    }
+
+    .first-text,
+    .second-text {
+        margin-left: -672px;
+    }
+
+    .first-text p,
+    .second-text p {
+        font-size: 18px;
+    }
+
+    .portfolios {
+        display: flex;
+
+    }
+
+    #focus {
+        font-size: 165px;
+    }
+
+    .services img {
+        width: 320px;
+        margin-left: -130px;
+        margin-right: 150px;
+    }
+
+    .why-us h1 {
+        font-size: 62px;
+    }
+
+    .why-us .subtitle {
+        font-size: 22px;
+        max-width: 90%;
+    }
+
+    .retangle {
+        width: 1000px;
+    }
+
+    .retangle-left h1 {
+        font-size: 35px;
+    }
+
+    .retangle-left p {
+        font-size: 20px;
+    }
+
+    .footer-text p {
+        margin-right: 60px;
+        margin-left: -60px;
+    }
+}
+
+@media screen and (min-width : 800px) and (max-width : 1024px) {
+    .slider {
+        width: 900px;
+    }
+
+    body {
+        border-right: 1px solid black;
+        overflow-x: hidden;
+    }
+
+    .first-text,
+    .second-text {
+        margin-left: -672px;
+    }
+
+    .second-text {
+        margin-top: 0px;
+    }
+
+    #printer {
+        width: 668px;
+        height: auto;
+        margin-left: 1233px;
+    }
+
+    .portfolios {
+        margin-left: 92px;
+        margin-right: 92px;
+    }
+
+    .square {
+        width: 500px;
+        margin-left: -100px;
+        margin-right: 120px;
+    }
+
+    #focus {
+        font-size: 125px;
+    }
+
+    .services img {
+        width: 225px;
+        margin-left: -110px;
+        margin-right: 130px;
+    }
+
+    .retangle {
+        width: 90vw;
+    }
+
+    .retangle-left h1 {
+        font-size: 32px;
+        max-width: 100%;
+    }
+
+    .retangle-left p {
+        font-size: 18px;
+    }
+
+    .retangle-left a {
+        font-size: 15px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+
+    .footer-text p {
+        margin-left: 0px;
+    }
+
+    .footer-text a {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    body {
+        border-right: 1px solid black;
+        overflow-x: hidden;
+    }
+
+    header {
+        margin-left: 5%;
+    }
+
+    #logo-flamez {
+        margin-right: 40%;
+    }
+
+    #about,
+    #service {
+        display: none;
+    }
+
+    .slider {
+        margin-top: -50px;
+        position: absolute;
+        width: 60vw;
+        height: 50%;
+
+    }
+
+    #title {
+        margin-top: 320px;
+        font-size: 40px;
+    }
+
+    #subtitle {
+        font-size: 20px;
+        max-width: 50%;
+    }
+
+    .about-us {
+        display: flex;
+        align-items: center;
+        margin-left: -50px;
+    }
+
+    .first-text,
+    .second-text {
+        margin-left: 50px;
+        text-align: center;
+
+    }
+
+    .budget-button {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .first-text h2,
+    .second-text h2 {
+        font-size: 28px;
+    }
+
+    .first-text p,
+    .second-text p {
+        font-size: 18px;
+        max-width: 46.5vw;
+        text-align: center;
+    }
+
+    #printer {
+        margin-left: 0px;
+        width: 313px;
+        height: 222px;
+        margin-top: 40px;
+    }
+
+    .second-text {
+        margin-top: 50px;
+    }
+
+    .portfolios {
+        padding-left: 0px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .square {
+        width: 80vw;
+        height: auto;
+    }
+
+    #square-1 {
+        margin-left: -200vw;
+    }
+
+    #square-2 {
+        margin-left: 200vw;
+    }
+
+    .services {
+        align-items: center;
+    }
+
+    .services img {
+        width: 33%;
+    }
+
+    .points {
+        display: flex;
+        width: 40vw;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .point {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #ccc;
+    }
+
+    .active {
+        background-color: #aaa;
+    }
+
+    #focus {
+        min-width: 100vw;
+        font-size: 70px;
+        margin-left: 0px;
+
+    }
+
+    .why-us {
+        width: 80vw;
+        align-self: center;
+        border-radius: 20px;
+        height: auto;
+        padding-bottom: 35px;
+    }
+
+    .why-us h1 {
+        font-size: 42px;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .why-us .subtitle {
+        font-size: 20px;
+        max-width: 410px;
+    }
+
+    .stamps {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .stamp {
+        margin-top: 30px;
+    }
+
+    .retangle {
+        width: 90vw;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 60px;
+        padding-right: 20%;
+        padding-left: 20%;
+        align-items: center;
+
+    }
+
+    .retangle-left h1 {
+        font-size: 32px;
+        max-width: 100%;
+        margin-left: 5%;
+        text-align: center;
+    }
+
+    .retangle-left p {
+        font-size: 20px;
+        max-width: 100%;
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .retangle-left a {
+        padding: 15px;
+        font-size: 16px;
+        margin-left: 20%;
+    }
+
+    .retangle-right img {
+        width: 100%;
+        margin-top: 80px;
+        margin-left: -205%;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+        padding-left: 40%;
+        padding-top: 5%;
+        padding-bottom: 4%;
+    }
+
+    .footer-text {
+        flex-direction: column;
+        margin-left: -220px;
+        align-items: center;
+    }
+
+    .footer-text p {
+        margin-left: 0px;
+        max-width: 55%;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 94px;
+    }
+
+    .social-media {
+        margin-left: -220px;
+        position: absolute;
+        margin-top: -20px;
+    }
+
+    footer #logo-flamez {
+        margin-right: 55%;
+    }
+}
+
+@media screen and (max-width : 425px) {
+    header #logo-flamez {
+        width: 28vw;
+        margin-right: 5vw;
+        margin-left: 10px;
+    }
+
+    #whatssap {
+        width: 28vw;
+        font-size: 13px;
+        height: 30px;
+        padding: 4px;
+    }
+
+    header nav a img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .slider {
+        height: 55%;
+        border-radius: 15px;
+        width: 80vw;
+        margin-top: -100px;
+    }
+
+    #title {
+        font-size: 25px;
+        margin-top: 250px;
+    }
+
+    #subtitle {
+        font-size: 17px;
+        max-width: 80%;
+    }
+
+    .first-text h2,
+    .second-text h2 {
+        font-size: 22px;
+    }
+
+    .first-text p,
+    .second-text p {
+        font-size: 16px;
+        max-width: 85vw;
+    }
+
+    .square {
+        padding: 40px 20px;
+    }
+
+    .square h4 {
+        font-size: 22px;
+    }
+
+    .point {
+        width: 10px;
+        height: 10px;
+    }
+
+    .why-us {
+        margin-top: 100px;
+        width: 80vw;
+        margin-left: 0vw;
+    }
+
+    .why-us h1 {
+        font-size: 28px;
+    }
+
+    .why-us .subtitle {
+        font-size: 16px;
+    }
+
+    .retangle {
+        width: 80vw;
+        padding: 20px 20px;
+        align-items: center;
+        margin-left: 0vw;
+    }
+
+    .retangle-left h1 {
+        max-width: 100%;
+        margin-left: 0%;
+    }
+
+    .retangle-left p {
+        max-width: 100%;
+        margin-left: 0%;
+    }
+
+    .retangle-left a {
+        margin-left: 10%;
+        display: block;
+        width: 80%;
+    }
+
+    .retangle-right img {
+        width: 120px;
+        margin-left: -130%;
+    }
+
+    footer #logo-flamez {
+        margin-right: 75%;
+    }
+
+    .social-media {
+        margin-left: -120px;
+    }
+
+    .footer-text {
+        margin-left: -120px;
+    }
+
+    .footer-text p {
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width : 375px) {
+    .retangle-left a {
+        font-size: 13px;
+        padding: 10px 6px;
+        width: 180px;
+    }
 }
