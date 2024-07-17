@@ -77,7 +77,7 @@ function showDivs() {
             imgRetangle.classList.remove('opacity-0')
         }
     }
-    if (screen.availWidth > 1200 && screen.availWidth < 1500) {
+    if (screen.availWidth > 1200 && screen.availWidth < 1800) {
         console.log(scrollY)
         if (scrollY > 700) {
             imgPrinter.classList.remove('opacity-0')

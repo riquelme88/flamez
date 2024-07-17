@@ -380,7 +380,11 @@ footer {
 
 .footer-text p {
     margin-right: 60px;
-    margin-left: -150px;
+    margin-left: 0px;
+}
+
+.autor a:hover {
+    color: rgb(39, 84, 199);
 }
 
 .footer-text a {
@@ -453,7 +457,7 @@ footer {
 
     .footer-text p {
         margin-right: 60px;
-        margin-left: -60px;
+        margin-left: 0px;
     }
 }
 
@@ -544,12 +548,16 @@ footer {
         font-size: 15px;
     }
 
+    footer #logo-flamez {
+        width: 120px;
+    }
+
     .footer-text {
-        font-size: 12px;
+        font-size: 9px;
     }
 
     .footer-text p {
-        margin-left: 0px;
+        margin-left: -0px;
     }
 
     .footer-text a {
@@ -557,7 +565,7 @@ footer {
     }
 }
 
-@media screen and (max-width : 768px) {
+@media screen and (max-width : 798px) {
     body {
         overflow-x: hidden !important;
     }
@@ -584,7 +592,7 @@ footer {
     }
 
     #title {
-        margin-top: 420px;
+        margin-top: 470px;
         font-size: 40px;
     }
 
@@ -782,11 +790,16 @@ footer {
     .social-media {
         margin-left: -220px;
         position: absolute;
-        margin-top: -20px;
+        margin-top: -150px;
     }
 
     footer #logo-flamez {
         margin-right: 55%;
+    }
+
+    footer .autor {
+        align-self: center;
+        margin-left: 50px;
     }
 }
 
@@ -909,10 +922,11 @@ footer {
     }
 }
 
-@media screen and (max-width : 375px) {
+@media screen and (max-width : 400px) {
     .retangle-left a {
         font-size: 13px;
-        padding: 10px 6px;
+        margin-left: 18%;
+        padding: 10px 10px;
         width: 180px;
     }
 }
